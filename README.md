@@ -8,7 +8,7 @@ RUS-Sim is a simulation developed specifically for robotic ultrasound imaging ap
 
 **Place holder for video demo**
 
-<img src="assets/Figure1.PNG" width=500>
+<img src="assets/Figure1.png" width=500>
 
 ## citation
 Please consider citing our work if you find rus-sim useful.
