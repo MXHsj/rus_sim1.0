@@ -1,8 +1,12 @@
 # RUS-Sim Visuals
 
-Complete source code for RUS Sim will come out soon.
+Complete source code for RUS-Sim will come out soon.
 
-RUS-Sim is a simulation developed specifically for robotic ultrasound imaging applications. The ultrasound robot platform was previously developed in [Medical FUSIONLAB](https://wp.wpi.edu/medicalfusionlab) at Worcester Polytechnic Insitute, and was digital twinned into RUS-Sim. It includes many automation features such as [automatic probe normal positioning](https://ieeexplore.ieee.org/abstract/document/9932673) and [ultrasound image based probe servoing](https://arxiv.org/abs/2406.11523), etc. The simulation features real-time ultrasound simulation based on preoperative patinet CT data.
+RUS-Sim is a simulation developed specifically for robotic ultrasound imaging applications. The ultrasound robot platform (shown in the picture below) was previously developed in [Medical FUSIONLAB](https://wp.wpi.edu/medicalfusionlab) at Worcester Polytechnic Insitute, and was digital twinned into RUS-Sim. 
+
+<img src="assets/rus_setup.png" width=380>
+
+RUS-Sim includes many autonomous functionalities that is available on the real robot system, such as [automatic probe normal positioning](https://ieeexplore.ieee.org/abstract/document/9932673) and [ultrasound image based probe servoing](https://arxiv.org/abs/2406.11523), etc. It features real-time ultrasound simulation based on preoperative patient CT data. This allows simulating ultrasound image acquisition, real-time image processing, image-based robot control, and many more.
 
 ## Demo
 
