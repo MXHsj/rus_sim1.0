@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- start the CT slicing node -->
+  <node name="oblique_slice_ct" pkg="rus_sim" type="oblique_slice_ct.py" output="screen" /> 
+
+  <!-- start the US simulation node -->
+  <node name="simulate_us" pkg="rus_sim" type="simulate_us.py" output="screen" /> 
+</launch>

@@ -1,0 +1,28 @@
+# editor
+c_cpp_properties.json
+settings.json
+build/
+
+# matlab
+*.asv
+*.mat
+
+# volume data
+*.nrrd
+*.nii
+*.nii.gz
+
+# MUST
+# /MUST/
+
+# python & pytorch
+*.pyc
+*.pth
+
+# multimedia
+*.gif
+*.zip
+
+# temporary
+/ct2us/pix2pix-pytorch-master/
+/ct2us/im2im/training_log/

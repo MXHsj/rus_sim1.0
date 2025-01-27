@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rus_panda_description</name>
+  <version>0.10.0</version>
+  <description>rus_panda_description contains URDF files and meshes of customized panda robot for robotic ultrasound</description>
+  <maintainer email="xma4@wpi.edu">Xihan Ma</maintainer>
+  <license>Apache 2.0</license>
+
+  <author>Xihan Ma</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>xacro</exec_depend>
+</package>

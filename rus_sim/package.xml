@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rus_sim</name>
+  <version>0.0.1</version>
+  <description>Package for robotic ultrasound simulator</description>
+
+  <maintainer email="xma4@wpi.edu">Xihan Ma</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <author>Xihan Ma</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>urdf</depend>
+  <depend>gazebo_dev</depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rus_panda_description</exec_depend>
+
+  <export>
+    <!--Export gazebo models and worlds-->
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros gazebo_resource_path="${prefix}/worlds"/>
+  </export>
+</package>
+ 

@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="rus_scene">
+    <scene>
+      <ambient>0.0 0.0 0.0 1.0</ambient>
+      <shadows>0</shadows>
+    </scene>
+
+    <!--A global light source-->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!--A ground plane-->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!--cart-->
+    <include>
+      <uri>model://robot_cart</uri>
+      <pose>0.0 0.65 0.0 0.0 0.0 1.5707</pose>
+      <static>1</static>
+    </include>
+
+    <!--bed-->
+    <include>
+      <uri>model://exam_bed</uri>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <static>1</static>
+    </include>
+
+    <!--patient-->
+    <!-- <include>
+      <uri>model://patient</uri>
+      <pose>1.08 0.6 0.6 0.0 0.0 3.1415</pose>
+      <static>1</static>
+    </include> -->
+
+    <include>
+      <uri>model://patient_CT</uri>
+      <pose>0.227 0.0 0.9 -1.5707 0.0 1.5707</pose>
+      <static>1</static>
+    </include>
+
+  </world>
+</sdf>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="device_name" default="fusionlab1"/>
+    <arg name="publish_rate" default="1000"/>
+
+    <!-- Start the Geomagic node -->
+    <include file="$(find geomagic_control)/launch/geomagic_headless.launch" >
+      <arg name="device_name" value="$(arg device_name)"/>
+      <arg name="publish_rate" value="$(arg publish_rate)"/>
+    </include>
+
+    <!-- start the controller node -->
+    <node name="teleop_haptics" pkg="rus_sim" type="teleop_haptics.py" output="screen" /> 
+</launch>

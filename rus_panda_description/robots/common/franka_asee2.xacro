@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="franka_asee2">
+  <!-- safety_distance: Minimum safety distance in [m] by which the collision volumes are expanded and which is enforced during robot motions -->
+  <xacro:macro name="franka_asee2" params="connected_to:='' arm_id:='fr3' rpy:='0 0 0' xyz:='0 0 0.224' tcp_xyz:='0 0 0' tcp_rpy:='0 0 0' safety_distance:=0 gazebo:=false description_pkg:=rus_panda_description">
+    <xacro:unless value="${connected_to == ''}">
+      <joint name="${arm_id}_asee2_joint" type="fixed">
+        <parent link="${connected_to}" />
+        <child link="${arm_id}_asee2" />
+        <origin xyz="${xyz}" rpy="${rpy}" />
+      </joint>
+    </xacro:unless>
+
+    <xacro:link_with_sc name="asee2" gazebo="${gazebo}">
+      <self_collision_geometries>
+        <xacro:collision_capsule xyz="0 0 0.04" direction="y" radius="${0.04+safety_distance}" length="0.1" />
+        <xacro:collision_capsule xyz="0 0 0.10" direction="y" radius="${0.02+safety_distance}" length="0.1" />
+      </self_collision_geometries>
+    </xacro:link_with_sc>
+
+    <!-- Define asee2 sensor frames -->
+    <!-- <link name="${arm_id}_asee2_tcp" /> -->
+
+  </xacro:macro>
+</robot>
