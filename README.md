@@ -36,8 +36,9 @@ RUS-Sim 1.0 is developed based on ```ROS1```. It was tested on ```ROS noetic``` 
 
 ### 1.2 Installation 
 1. Clone the repository to the ```src``` folder of a ```catkin``` workspace.
-2. Download the pretrained CT2US [model files](https://zenodo.org/records/14750861) and place them under ```ct2us/im2im/model```. You may need to create a ```model``` folder first.
-3. Build the ```catkin``` workspace
+2. Download the [CT volume](https://zenodo.org/records/14947034) and place it under ```assets/```.
+3. Download the pretrained CT2US [model files](https://zenodo.org/records/14750861) and place them under ```ct2us/im2im/model```. You may need to create a ```model``` folder first.
+4. Build the ```catkin``` workspace
     ``` shell
     catkin_make
     ```
